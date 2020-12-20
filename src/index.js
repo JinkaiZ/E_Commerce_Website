@@ -8,14 +8,24 @@ import { CartProvider } from './context/cart_context'
 import { UserProvider } from './context/user_context'
 import { Auth0Provider } from '@auth0/auth0-react'
 
+//Domain: dev - n - ezq4sa.au.auth0.com
+//Client ID: gPRG7nN0meOJc9fiE6z9EJIQw6ZmtZ0r
+
 ReactDOM.render(
-    <ProductsProvider>
-        <FilterProvider>
-            <CartProvider>
-                <App />
-            </CartProvider>
-        </FilterProvider>
-    </ProductsProvider>
-
-
-    , document.getElementById('root'))
+    <Auth0Provider
+        domain="dev-n-ezq4sa.au.auth0.com"
+        clientId="gPRG7nN0meOJc9fiE6z9EJIQw6ZmtZ0r"
+        redirectUri={window.location.origin}
+        cacheLocation='localstorage'
+    >
+        <UserProvider>
+            <ProductsProvider>
+                <FilterProvider>
+                    <CartProvider>
+                        <App />
+                    </CartProvider>
+                </FilterProvider>
+            </ProductsProvider>
+        </UserProvider>
+    </Auth0Provider>,
+    document.getElementById('root'))

@@ -13,7 +13,6 @@ const Hero = () => {
           comfort zone
         </h1>
         <p>
-          comfy sloth furniture specialise to import quality furniture to NZ.
           All products are manufactured under our supervision in selected
           factories around the world. Then ship directly to you with no middlemen
           involved, hence the low prices.

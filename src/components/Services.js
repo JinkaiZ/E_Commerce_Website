@@ -12,7 +12,6 @@ const Services = () => {
             built only for you
           </h3>
           <p>
-            comfy sloth furniture specialise to import quality furniture to NZ.
             All products are manufactured under our supervision in selected
             factories around the world.
            </p>

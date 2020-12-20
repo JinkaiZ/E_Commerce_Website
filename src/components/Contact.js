@@ -10,7 +10,6 @@ const Contact = () => {
         </h3>
         <div className='content'>
           <p>
-            comfy sloth furniture specialise to import quality furniture to NZ.
             All products are manufactured under our supervision in selected
             factories around the world.
          </p>
